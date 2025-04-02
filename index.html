@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="history"></div>
+            <div class="result">0</div>
+        </div>
+        <div class="buttons">
+            <!-- Scientific Functions Row 1 -->
+            <div class="scientific-row">
+                <button class="function" data-action="rad">Rad</button>
+                <button class="function" data-action="deg">Deg</button>
+                <button class="function" data-action="mc">mc</button>
+                <button class="function" data-action="mplus">m+</button>
+                <button class="function" data-action="mminus">m-</button>
+                <button class="function" data-action="mr">mr</button>
+            </div>
+            <!-- Scientific Functions Row 2 -->
+            <div class="scientific-row">
+                <button class="function" data-action="2nd">2<sup>nd</sup></button>
+                <button class="function" data-action="sqr">x<sup>2</sup></button>
+                <button class="function" data-action="cube">x<sup>3</sup></button>
+                <button class="function" data-action="power">x<sup>y</sup></button>
+                <button class="function" data-action="exp">e<sup>x</sup></button>
+                <button class="function" data-action="10power">10<sup>x</sup></button>
+            </div>
+            <!-- Scientific Functions Row 3 -->
+            <div class="scientific-row">
+                <button class="function" data-action="sin">sin</button>
+                <button class="function" data-action="cos">cos</button>
+                <button class="function" data-action="tan">tan</button>
+                <button class="function" data-action="log">log</button>
+                <button class="function" data-action="ln">ln</button>
+                <button class="function" data-action="factorial">x!</button>
+            </div>
+            <!-- Main Calculator Part -->
+            <div class="main-row">
+                <button class="clear" data-action="clear">C</button>
+                <button class="operator" data-action="plusminus">±</button>
+                <button class="operator" data-action="percent">%</button>
+                <button class="operator" data-action="divide">÷</button>
+            </div>
+            <div class="main-row">
+                <button class="number" data-number="7">7</button>
+                <button class="number" data-number="8">8</button>
+                <button class="number" data-number="9">9</button>
+                <button class="operator" data-action="multiply">×</button>
+            </div>
+            <div class="main-row">
+                <button class="number" data-number="4">4</button>
+                <button class="number" data-number="5">5</button>
+                <button class="number" data-number="6">6</button>
+                <button class="operator" data-action="subtract">−</button>
+            </div>
+            <div class="main-row">
+                <button class="number" data-number="1">1</button>
+                <button class="number" data-number="2">2</button>
+                <button class="number" data-number="3">3</button>
+                <button class="operator" data-action="add">+</button>
+            </div>
+            <div class="main-row">
+                <button class="number" data-number="0">0</button>
+                <button class="decimal" data-action="decimal">.</button>
+                <button class="function" data-action="pi">π</button>
+                <button class="equals" data-action="calculate">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
